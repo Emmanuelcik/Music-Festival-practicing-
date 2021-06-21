@@ -1,0 +1,41 @@
+.header{
+    background-color: $verde;
+
+    .contenido-header{
+        padding: 2rem 0;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1{
+        color: $blanco;
+        margin-bottom: 1rem;
+        text-align: center;
+        @include tablet{
+            margin-bottom: 0;
+        }
+    }
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444; //3 valores el primero es el sombreado de los lados 
+        //luego la sobra de arriba a abajo y despues sigue la expansion de la sombra y al final el color
+    }
+}
+
+.navegacion-principal{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    a{
+        color: $blanco;
+        font-size: 2rem;
+        &:hover{
+            color: $amarillo;
+        }
+    }
+}
+
